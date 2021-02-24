@@ -49,6 +49,14 @@ h6 {
         line-height: 77px;
     }
 }
+
+.section-heading {
+    &--inline-justify {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 // End titles
 
 .section-bg {
@@ -67,6 +75,7 @@ h6 {
 @import "../general-modules/hamburger.scss";
 @import "../general-modules/lang.scss";
 @import "../general-modules/scroll-status.scss";
+@import "../general-modules/btn-df.scss";
 
 // General sections
 @import "../general-sections/header.scss";
