@@ -9,26 +9,75 @@ $tab-color--active: $accent;
     font-family: $tab-font;
     color: $tab-color;
     text-transform: uppercase;
+    @include df-transition;
+
+    &:after, &__line {
+        @include df-transition;
+    }
 
     &:after {
         content: '';
-    }
-
-    &__line, &:after {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) rotate(-45deg);
-        width: 160px;
-        height: 2px;
-        background: $tab-color;
         opacity: 0;
+        background: $tab-color;
+        height: 2px;
+    }
+
+    &__line {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        height: 2px;
+        opacity: 0;
+        background: $tab-color;
     }
     
     &__name {
         position: relative;
     }
 }
+
+.tab {
+    &--acquaintance {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+
+        &:after {
+            width: 160px;
+        }
+
+        .tab {
+            &__line {
+                width: 160px;
+            }
+        }
+    }
+    // End acquaintance type
+
+    &--portfolio {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+
+        &:after {
+            width: 100px;
+        }
+
+        .tab {
+            &__line {
+                width: 100px;
+            }
+        }
+    }
+    // End portfolio type
+}
+// End modificators
+
 
 .tab {
     &--active {
@@ -52,13 +101,3 @@ $tab-color--active: $accent;
     }
 }
 // End hover
-
-.tab {
-    &--acquaintance {
-        font-weight: bold;
-        font-size: 32px;
-        line-height: 38px;
-    }
-    // End acquaintance type
-}
-// End modificators
