@@ -1,3 +1,5 @@
+body { height: 100%; font-size: 18px; background: $black; font-family: $font--montserrat; }
+
 // Heading sizes
 h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: bold; font-family: $font--jost;}
 
@@ -31,4 +33,18 @@ h6 {
     line-height: 36px;
 }
 
-body { height: 100%; font-size: 18px; background: $black; }
+.section {
+    &--dark {
+        color: $white;
+    }
+}
+
+// General modules
+@import "../general-modules/container.scss";
+@import "../general-modules/phone.scss";
+@import "../general-modules/menu.scss";
+@import "../general-modules/hamburger.scss";
+@import "../general-modules/lang.scss";
+
+// General sections
+@import "../general-sections/header.scss";
