@@ -1,74 +1,9 @@
 // Colors
-$white: #ffffff;
-$black: #000000;
-$celltoColor: #49c135;
-$celltoTextColor: #009a44;
-$dark: #333333;
-$gray: #777777;
-$lineColor: #eeeeee;
-$brandIconColor: #b0bec5;
-$borderColor: #dddddd;
-$fbColor: #4E6FAE;
-$twitterColor: #1DADEB;
-$googleColor: #d54837;
-$buttomAuthBg: #f5f5f5;
-
-// Sizes
-$base-font-size: 13px;
+$black: #333333;
+$gray: #555555;
+$white: #FFFFFF;
+$accent: #E6340D;
 
 // Fonts
-$base-font: 'Roboto', sans-serif;
-
-// Buttons, inputs param
-$btnBorderRadius: 5px;
-$inputHeight: 35px;
-
-// Card params
-$cardRadius: 10px;
-$cardShadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
-
-// Darkest bg default
-$darkestBg: rgba($dark, .3);
-
-// Header and footer heights
-$headerHeight: 80px;
-
-// Inputs
-$inputBorderColor: #d1cfcf;
-
-// Checkbox
-$checkBorderColor: #d1cfcf;
-$checkSize: 14px;
-
-// Link
-$linkColor: darken($celltoColor, 10%);
-$hoverLinkColor: $celltoColor;
-
-// Breadcrumbs
-$breadcrumbsButtomMargin: 20px;
-
-// Item controls
-$itemControlsBg: #fafafa;
-$itemControlsBorder: solid 1px #ddd;
-
-// Messages
-$msgDefaultBorder: #bce8f1;
-$msgDefaultText: #31708f;
-$msgDefaultBg: #d9edf7;
-
-// Item package
-$listOkBg: #2ECC71;
-$listDangerBg: #E74C3C;
-
-// Item comments
-$itemRoleModer: darken($celltoColor, 10%);
-$itemRoleSaler: #23b2e7;
-
-// Phone changer
-$hoverBgChanger: #f5f5f5;
-
-// Item listing
-$itemListingHoverBg: #F6F6F5;
-$itemListingVipBg: rgba($celltoColor, .1);
-
-// Fonts
+$font--jost: 'Jost', sans-serif;
+$font--montserrat: 'Montserrat', sans-serif;

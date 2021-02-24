@@ -1,43 +1,34 @@
 // Heading sizes
+h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: bold; font-family: $font--jost;}
+
 h1 {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 100px;
+    line-height: 120px;
 }
 
 h2 {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 72px;
+    line-height: 86px;
 }
 
 h3 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 64px;
+    line-height: 77px;
 }
 
 h4 {
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 48px;
+    line-height: 58px;
 }
 
 h5 {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 32px;
+    line-height: 38px;
 }
 
 h6 {
-    font-size: 12px;
-    line-height: 20px;
-}
-// Text options
-.text-center {
-    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
 }
 
-main {
-    // padding-top: $headerHeight;
-    padding-bottom: 50px;
-}
-
-.underline {
-    text-decoration: underline;
-}
+body { height: 100%; font-size: 18px; background: $black; }

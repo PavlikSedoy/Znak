@@ -72,22 +72,22 @@ $z-indexes: (
   transition: .3s ease;
 }
 
-@mixin media-1599() {
-  @media screen and (max-width: 1599px) {@content}
+@mixin media-xl() {
+  @media screen and (max-width: 1919px) {@content}
 }
 
-@mixin media-1199() {
-  @media screen and (max-width: 1199px) {@content}
+@mixin media-lg() {
+  @media screen and (max-width: 1365px) {@content}
 }
 
-@mixin media-991() {
-  @media screen and (max-width: 991px) {@content}
+@mixin media-md() {
+  @media screen and (max-width: 1023px) {@content}
 }
 
-@mixin media-767() {
+@mixin media-sm() {
   @media screen and (max-width: 767px) {@content}
 }
 
-@mixin media-599() {
+@mixin media-xs() {
   @media screen and (max-width: 599px) {@content}
 }
