@@ -89,19 +89,19 @@ const plugins = () => {
       },
       {
         from: path.resolve(__dirname, 'src/assets/fonts'),
-        to: path.resolve(__dirname, 'fonts')
+        to: path.resolve(__dirname, 'assets/fonts')
       },
       {
         from: path.resolve(__dirname, 'src/assets/pics'),
-        to: path.resolve(__dirname, 'pics')
+        to: path.resolve(__dirname, 'assets/pics')
       },
       {
         from: path.resolve(__dirname, 'src/assets/images'),
-        to: path.resolve(__dirname, 'images')
+        to: path.resolve(__dirname, 'assets/images')
       },
       {
         from: path.resolve(__dirname, 'src/assets/svg'),
-        to: path.resolve(__dirname, 'svg')
+        to: path.resolve(__dirname, 'assets/svg')
       },
     ]),
     new ImageminPlugin({ test: /\.(jpe?g|png|gif)$/i }),

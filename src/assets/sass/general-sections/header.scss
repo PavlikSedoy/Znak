@@ -4,6 +4,7 @@
     top: 0;
     padding: 30px 0;
     width: 100%;
+    z-index: z('header');
 
     &__container {
         display: flex;
