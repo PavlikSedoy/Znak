@@ -28,6 +28,14 @@ $scrollStatus-margin--xl: 20px;
         width: $scrollStatus-width--xl;
         height: $scrollStatus-height--xl;
         background: $scrollStatus-color;
+
+        &::before {
+            @include pseudo;
+            left: 0;
+            width: 100%;
+            height: $scrollStatus-accentHeight--xl;
+            background: $scrollStatus-accentColor;
+        }
     }
 }
 
@@ -35,12 +43,16 @@ $scrollStatus-margin--xl: 20px;
 .scroll-status__line {
     &--top {
         &::before {
-            @include pseudo;
-            left: 0;
             top: 0;
-            width: 100%;
-            height: $scrollStatus-accentHeight--xl;
-            background: $scrollStatus-accentColor;
         }
     }
+    // End top
+
+    &--middle {
+        &::before {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    // End middle
 }

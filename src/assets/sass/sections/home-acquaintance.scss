@@ -27,4 +27,13 @@
             display: block;
         }
     }
+    // End content
+
+    &__tabs {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 60px 20px;
+    }
+    // End tabs
 }
