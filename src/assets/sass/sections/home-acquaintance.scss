@@ -1,0 +1,30 @@
+.acquaintance {
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    &__inner {
+        flex-basis: 50%;
+    }
+
+    &__heading {
+        margin-bottom: 60px;
+    }
+
+    &__content-item {
+        display: none;
+        max-width: 630px;
+        font-size: 18px;
+        line-height: 27px;
+        color: $lightGray;
+
+        p {
+            margin-top: 15px;
+        }
+
+        &--active {
+            display: block;
+        }
+    }
+}
