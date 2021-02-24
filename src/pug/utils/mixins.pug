@@ -1,0 +1,35 @@
+mixin icon(name,mod)
+	if(mod)
+		svg(class="svg-sprite-icon icon-" + name + ' ' + mod)
+			use(xlink:href="/assets/svg/sprite.svg#" + name)
+	else
+		svg(class="svg-sprite-icon icon-" + name)
+			use(xlink:href="/src/assets/svg/sprite.svg#" + name)
+
+mixin iconClass(name, iconClassName)
+	svg(class= iconClassName)
+		use(xlink:href="/svg/sprite.svg#" + name)
+
+mixin deviceCard(all, parentClass, phoneImage, title, pricing, logo)
+	if(all)
+		article(class="device-card device-card__type_all " + parentClass)
+			a.device-card__link(href="/")
+				.device-card__logo !{logo}
+				.device-card__phone-img-wr
+					img(src= phoneImage, alt="")
+				h3.device-card__title= title
+				span.device-card__title-desc (все модели)
+	else
+		article(class="device-card " + parentClass)
+			a.device-card__link(href="/")
+				.device-card__pricing <span>от</span> #{pricing} <span>грн</span>
+				.device-card__phone-img-wr
+					img(src= phoneImage, alt="")
+				h3.device-card__title= title
+
+mixin checkbox(parentClass, checkId, label)
+	div(class="check " + parentClass)
+		.check__checkbox
+			input.check__input(type="checkbox", id= checkId)
+			.check__styling
+		label.check__label(for= checkId) !{label}
