@@ -1,3 +1,3 @@
 import '@styles/index.scss';
 
-// import '@js/utils/main';
+import '@js/utils/general'
