@@ -1,0 +1,46 @@
+// Colors
+$scrollStatus-color: $white;
+$scrollStatus-accentColor: $accent;
+
+// Sizes
+$scrollStatus-width--xl: 2px;
+$scrollStatus-height--xl: 240px;
+$scrollStatus-accentHeight--xl: 104px;
+
+// Margin
+$scrollStatus-margin--xl: 20px;
+
+.scroll-status {
+    @include push--middle;
+    right: 40px;
+    color: $scrollStatus-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__number {
+        font-weight: 600;
+    }
+
+    &__line {
+        position: relative;
+        margin: $scrollStatus-margin--xl 0;
+        width: $scrollStatus-width--xl;
+        height: $scrollStatus-height--xl;
+        background: $scrollStatus-color;
+    }
+}
+
+// Modificators
+.scroll-status__line {
+    &--top {
+        &::before {
+            @include pseudo;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: $scrollStatus-accentHeight--xl;
+            background: $scrollStatus-accentColor;
+        }
+    }
+}
