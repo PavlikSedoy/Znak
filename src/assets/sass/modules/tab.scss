@@ -1,0 +1,56 @@
+$tab-font: $font--jost;
+$tab-color: $white;
+$tab-color--active: $accent;
+
+.tab {
+    position: relative;
+    border: none;
+    background: transparent;
+    font-family: $tab-font;
+    color: $tab-color;
+    text-transform: uppercase;
+
+    &__line {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        width: 160px;
+        height: 2px;
+        background: $tab-color;
+        opacity: 0;
+    }
+
+    &__name {
+        position: relative;
+    }
+}
+
+.tab {
+    &--active {
+        color: $tab-color--active;
+
+        .tab {
+            &__line {
+                opacity: 1;
+            }
+        }
+    }
+}
+// End active
+
+.tab:hover {
+    cursor: pointer;
+    color: $tab-color--active;
+}
+// End hover
+
+.tab {
+    &--acquaintance {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    // End acquaintance type
+}
+// End modificators
