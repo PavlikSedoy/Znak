@@ -1,0 +1,27 @@
+.section-bg {
+    position: absolute;
+    width: 1058px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &__gradient {
+        position: absolute;
+        top: 0;
+        width: 368px;
+        height: 100%;
+    }
+}
+
+.section-bg {
+    &--left {
+        left: 0;
+
+        .section-bg {
+            &__gradient {
+                right: 0;
+                background: linear-gradient(90deg, rgba(17, 17, 17, 0) 0%, #111111 100%);
+            }
+        }
+    }
+}
+// End modificators

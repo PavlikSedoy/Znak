@@ -40,6 +40,15 @@ h6 {
     }
 }
 
+.section-bg {
+    z-index: z('below-content');
+}
+
+.section-container {
+    z-index: z('content');
+}
+// End Layers
+
 // General modules
 @import "../general-modules/container.scss";
 @import "../general-modules/phone.scss";
