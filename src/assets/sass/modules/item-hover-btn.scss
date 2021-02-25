@@ -1,0 +1,54 @@
+.item-hover-btn {
+    position: relative;
+    
+    &__img-wr {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding-top: 109%;
+        overflow: hidden;
+    }
+
+    &__img {
+        position: absolute;
+        @include push--center-middle;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    &__content {
+        position: absolute;
+        left: 15px;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        max-width: calc(100% - 30px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        margin: 22px 0;
+    }
+
+    &__btn {
+        margin-top: 0;
+        padding: 0;
+        margin: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &:hover {
+        .item-hover-btn {
+            &__btn {
+                padding: 21px 31px;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

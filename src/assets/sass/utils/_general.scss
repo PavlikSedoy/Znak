@@ -3,7 +3,7 @@ body { height: 100%; font-size: 18px; background: $bg; font-family: $font--monts
 // Heading sizes
 h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: bold; font-family: $font--jost;}
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
@@ -62,6 +62,10 @@ h6 {
         align-items: center;
     }
 
+    &--centered {
+        text-align: center;
+    }
+
     &__title {
         &--black {
             color: $black;
@@ -72,6 +76,17 @@ h6 {
         margin-top: 30px;
         font-size: 24px;
         line-height: 36px;
+
+        &--light-gray {
+            color: $lightGray;
+        }
+
+        &--top {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 32px;
+            line-height: 48px;
+        }
     }
 }
 // End titles

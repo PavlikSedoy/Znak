@@ -1,0 +1,9 @@
+.your-object {
+    &__items {
+        margin-top: 60px;
+    }
+
+    &__item {
+        flex-shrink: 1;
+    }
+}
