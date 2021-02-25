@@ -4,4 +4,12 @@
         display: flex;
         gap: 150px;
     }
+
+    &__items-wr-container {
+        margin-top: 80px;
+    }
+
+    &__items-wr {
+        overflow: visible;
+    }
 }

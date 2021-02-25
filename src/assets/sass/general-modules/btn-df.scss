@@ -1,5 +1,7 @@
 $btnDf-color--white: $white;
 $btnDf-color--white-hover: $bg;
+$btnDf-color--dark: $black;
+$btnDf-color--dark-hover: $white;
 
 .btn-df {
     position: relative;
@@ -53,6 +55,21 @@ $btnDf-color--white-hover: $bg;
             color: $btnDf-color--white-hover;
         }
         // End hover
+    }
+
+    &--dark {
+        color: $btnDf-color--dark;
+        border-color: $btnDf-color--dark;
+
+        .btn-df {
+            &__bg {
+                background: $btnDf-color--dark;
+            }
+        }
+
+        &:hover {
+            color: $btnDf-color--dark-hover;
+        }
     }
 
     &--border {

@@ -41,6 +41,11 @@ h6 {
     &--dark {
         color: $white;
     }
+
+    &--white {
+        color: $gray;
+        background: $white;
+    }
 }
 
 .section-heading {
@@ -55,6 +60,12 @@ h6 {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &__title {
+        &--black {
+            color: $black;
+        }
     }
 }
 // End titles
