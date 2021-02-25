@@ -46,12 +46,28 @@ h6 {
         color: $gray;
         background: $white;
     }
+
+    &--light {
+        color: $gray;
+        background: $light;
+    }
 }
 
 .section-heading {
     &__title {
         font-size: 64px;
         line-height: 77px;
+    }
+
+    &__title {
+        &--xl {
+            font-size: 72px;
+            line-height: 86px;
+        }
+
+        &--black {
+            color: $black;
+        }
     }
 }
 
