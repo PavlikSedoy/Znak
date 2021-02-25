@@ -1,0 +1,23 @@
+$whyNumber-color: $accent;
+
+.why-number {
+    color: $whyNumber-color;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    &__number {
+        margin: 20px 0 10px 0;
+        font-family: $font--jost;
+        font-weight: bold;
+        font-size: 100px;
+        line-height: 1;
+    }
+}

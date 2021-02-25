@@ -1,0 +1,39 @@
+.why-us {
+    &__inner {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__numbers, &__adwards {
+        flex-basis: 50%;
+    }
+
+    &__items {
+        margin-top: 100px;
+        flex-basis: 100%;
+        display: flex;
+    }
+
+    &__item {
+        flex: 1 1 220px;
+        gap: 30px;
+    }
+
+    // Numbers
+    &__numbers {
+        display: flex;
+    }
+
+    &__number-item {
+        flex: 1 1 auto;
+    }
+    // End numbers
+
+    // Adwards
+    // End adwards
+
+    // Items
+    // End items
+}
