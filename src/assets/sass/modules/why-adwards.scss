@@ -1,0 +1,44 @@
+$adwards-color: $black;
+$adwards-font: $font--jost;
+$adwards-borderColor: $lightGray;
+$adwards-borderColor--dark: $black;
+
+.why-adwards {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    border: 2px solid $adwards-borderColor;
+
+    &::before, &::after {
+        @include pseudo;
+        background: $adwards-borderColor--dark;
+        top: -2px;
+    }
+
+    &::before {
+        height: 2px;
+        width: calc(100% + 2px);
+        left: -2px;
+    }
+
+    &::after {
+        width: 2px;
+        height: 109px;
+        right: -2px;
+    }
+
+    &__title {
+        color: $adwards-color;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        $font-family: $adwards-font;
+        text-transform: uppercase;
+        flex-basis: 440px;
+    }
+
+    &__img {
+        flex-basis: 250px;
+    }
+}
