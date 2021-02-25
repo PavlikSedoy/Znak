@@ -1,0 +1,27 @@
+$iconDescItem--w: 48px;
+$iconDescItem--h: 48px;
+$iconDescItem-font: $font--montserrat;
+$iconDescItem-titleColor: $black;
+
+.icon-desc-item {
+    &__icon {
+        width: $iconDescItem--w;
+        height: $iconDescItem--h;
+    }
+
+    &__title, &__desc {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    &__title {
+        margin-top: 20px;
+        font-family: $iconDescItem-font;
+        font-weight: 600;
+        color: $iconDescItem-titleColor;
+    }
+
+    &__desc {
+        margin-top: 20px;
+    }
+}

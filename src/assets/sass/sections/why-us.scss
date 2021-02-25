@@ -14,11 +14,11 @@
         margin-top: 100px;
         flex-basis: 100%;
         display: flex;
+        gap: 30px;
     }
 
     &__item {
         flex: 1 1 220px;
-        gap: 30px;
     }
 
     // Numbers
