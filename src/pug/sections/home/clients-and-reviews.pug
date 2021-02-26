@@ -32,8 +32,23 @@ div.section.section--white
             //- End items wrapper
         //- End clients
         section.container__side--two-equal.reviews
-            .section-heading
+            .section-heading.section-heading--inline-justify
                 h2.section-heading__title.section-heading__title--black Отзывы
+                .reviews__arrows
+                    button.reviews__arrow.slider-arrow.slider-arrow--prev
+                        <svg class="slider-arrow__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M38 24H10" stroke="#E6340D" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M24 38L10 24L24 10" stroke="#E6340D" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+
+                    button.reviews__arrow.slider-arrow.slider-arrow--next
+                        <svg class="slider-arrow__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 24H38" stroke="#E6340D" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M24 38L38 24L24 10" stroke="#E6340D" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                //- End slider arrows
             //- End heading
+
+            //- End slider
         //- End reviews
     //- End contianer

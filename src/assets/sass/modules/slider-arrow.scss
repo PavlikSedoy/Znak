@@ -1,0 +1,33 @@
+$sliderArrow-size: 48px;
+$sliderArrow-color: $accent;
+$sliderAroow-color--hover: $black;
+
+.slider-arrow {
+    width: $sliderArrow-size;
+    height: $sliderArrow-size;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    &__icon {
+        width: 100%;
+        height: 100%;
+
+        path {
+            stroke: $sliderArrow-color;
+            @include df-transition;
+        }
+    }
+}
+
+// Hover
+.slider-arrow:hover {
+    cursor: pointer;
+
+    .slider-arrow {
+        &__icon path {
+            stroke: $sliderAroow-color--hover;
+        }
+    }
+}
+// End hover
