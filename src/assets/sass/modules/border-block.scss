@@ -1,0 +1,24 @@
+$borderBlock-borderColor: $lightGray;
+$borderBlock-borderColor--dark: $black;
+
+.border-block {
+    border: 2px solid $borderBlock-borderColor;
+
+    &::before, &::after {
+        @include pseudo;
+        background: $borderBlock-borderColor--dark;
+        top: -2px;
+    }
+
+    &::before {
+        height: 2px;
+        width: calc(100% + 2px);
+        left: -2px;
+    }
+
+    &::after {
+        width: 2px;
+        height: 109px;
+        right: -2px;
+    }
+}
