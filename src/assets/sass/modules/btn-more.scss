@@ -1,0 +1,38 @@
+$btnMore-color: $black;
+$btnMore-color--hover: $accent;
+
+.btn-more {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $btnMore-color;
+    border: none;
+    outline: none;
+    background: transparent;
+    @include df-transition;
+
+    &__arrow {
+        margin-left: 10px;
+        width: 24px;
+        height: 24px;
+        transition: inherit;
+
+        path {
+            transition: inherit;
+        }
+    }
+}
+
+.btn-more:hover {
+    color: $btnMore-color--hover;
+    cursor: pointer;
+
+    .btn-more {
+        &__arrow path {
+            stroke: $btnMore-color--hover;
+        }
+    }
+}
+// End hover

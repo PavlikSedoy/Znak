@@ -5,3 +5,16 @@
     padding: 0 15px;
     max-width: 1760px;
 }
+
+.container {
+    &--flex {
+        display: flex;
+    }
+
+    &__side {
+        &--two-equal {
+            flex: 1 1 50%;
+        }
+    }
+}
+// End modifers
