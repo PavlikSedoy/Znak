@@ -72,6 +72,53 @@ $btnDf-color--dark-hover: $white;
         }
     }
 
+    &--transparent {
+        color: $btnDf-color--white;
+        border-color: transparent;
+
+        &::before, &::after {
+            @include pseudo;
+            left: 0px;
+            width: 0;
+            height: 2px;
+            background: $btnDf-color--white;
+            transition: inherit;
+        }
+
+        &::before {
+            top: -2px;
+        }
+
+        &::after {
+            bottom: -2px;
+        }
+
+        .btn-df {
+            &__bg {
+                background: $btnDf-color--white;
+                right: 0;
+            }
+
+            &__bg, &__name {
+                transition-delay: 0;
+            }
+        }
+
+        &:hover {
+            color: $btnDf-color--white-hover;
+
+            &::before, &::after {
+                width: 100%;
+            }
+
+            .btn-df {
+                &__bg, &__name {
+                    transition-delay: 350ms;
+                }
+            }
+        }
+    }
+
     &--border {
         border-width: 2px;
         border-style: solid;
