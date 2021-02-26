@@ -11,6 +11,11 @@
             font-size: 18px;
             line-height: 27px;
             text-transform: uppercase;
+            @include df-transition;
+
+            &:hover {
+                color: $accent;
+            }
         }
     }
 }
