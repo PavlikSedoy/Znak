@@ -1,0 +1,19 @@
+.request-form.section.section--dark
+    .container
+        .section-heading.section-heading--centered 
+            h2.section-heading__title.section-heading__title--white.section-heading__title--xl Остались вопросы?
+
+        form.request-form__form(action="/" method="post")
+            label.request-form__field.field.field--material-to-right
+                input.field__input(placeholder="e.g. Stanislav" require)
+                span.field__label-wrap
+                    span.field__label First name
+            label.request-form__field.field.field--material-to-right
+                input.field__input(placeholder="e.g. Stanislav" require)
+                span.field__label-wrap
+                    span.field__label First name
+            button.request-form__btn.btn-df.btn-df--border.btn-df--white(type="submit")
+                span.btn-df__bg
+                span.btn-df__name ОТПРАВИТЬ
+        //- End form
+    //- End container

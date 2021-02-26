@@ -1,0 +1,10 @@
+.request-form {
+    &__form {
+        margin: 40px auto 0;
+        width: 100%;
+        max-width: 1290px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 190px;
+        grid-gap: 30px;
+    }
+}
