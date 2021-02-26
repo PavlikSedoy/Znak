@@ -13,6 +13,7 @@ $scrollStatus-margin--xl: 20px;
 .scroll-status {
     position: fixed;
     top: 50%;
+    width: 23px;
     transform: translateY(-50%);
     right: 40px;
     color: $scrollStatus-color;
@@ -31,14 +32,14 @@ $scrollStatus-margin--xl: 20px;
         width: $scrollStatus-width--xl;
         height: $scrollStatus-height--xl;
         background: $scrollStatus-color;
+    }
 
-        &::before {
-            @include pseudo;
-            left: 0;
-            width: 100%;
-            height: $scrollStatus-accentHeight--xl;
-            background: $scrollStatus-accentColor;
-        }
+    &__vizual {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: $scrollStatus-accentColor;
+        @include df-transition;
     }
 }
 

@@ -12,6 +12,7 @@ mixin iconClass(name, iconClassName)
 
 mixin scroll-status(firstNumber, lastNumber, position)
 	.scroll-status
-		span.scroll-status__number.scroll-status__number--start= firstNumber
+		span#currentScroll.scroll-status__number.scroll-status__number--start= firstNumber
 		div(class="span scroll-status__line scroll-status__line--" + position)
-		span.scroll-status__number.scroll-status__number--end= lastNumber
+			div#scrollVizual.scroll-status__vizual
+		span#totalScrolls.scroll-status__number.scroll-status__number--end= lastNumber
