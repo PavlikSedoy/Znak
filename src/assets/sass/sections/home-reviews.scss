@@ -1,0 +1,16 @@
+.reviews {
+    &__arrows {
+        display: flex;
+        gap: 20px;
+    }
+    // End heading
+
+    &__slider {
+        margin-top: 80px;
+    }
+
+    &__inner {
+        width: 850px;
+    }
+    // End slider block
+}

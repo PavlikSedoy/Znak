@@ -1,0 +1,38 @@
+$reviewCard-color--title: $accent;
+$reviewCard-color: $black;
+
+.review-card {
+    padding: 40px 80px 40px 190px;
+
+    &__quote {
+        position: absolute;
+        left: 40px;
+        top: 40px;
+    }
+
+    &__content {
+        color: $reviewCard-color;
+
+        p {
+            margin-top: 15px;
+            line-height: 27px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    
+    &__title {
+        margin-top: 30px;
+        color: $reviewCard-color--title;
+    }
+
+    &__date {
+        margin-top: 20px;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
