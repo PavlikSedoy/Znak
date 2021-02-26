@@ -23,5 +23,18 @@
             }
         }
     }
+    // End left
+
+    &--right {
+        right: 0;
+
+        .section-bg {
+            &__gradient {
+                left: 0;
+                background: linear-gradient(-90deg, rgba(17, 17, 17, 0) 0%, #111111 100%);
+            }
+        }
+    }
+    // End right
 }
 // End modificators

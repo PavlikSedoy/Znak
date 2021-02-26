@@ -1,0 +1,26 @@
+.design-project {
+    &__content {
+        width: 630px;
+    }
+
+    &__desc {
+        margin-top: 40px;
+        font-size: 24px;
+        line-height: 36px;
+
+        p {
+            margin-top: 15px;
+        }
+    }
+
+    &__btns {
+        margin-top: 50px;
+        display: flex;
+        gap: 30px;
+    }
+
+    &__btn {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+}
