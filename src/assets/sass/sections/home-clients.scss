@@ -12,4 +12,17 @@
         width: 120px;
         height: 120px;
     }
+
+    &__logo {
+        filter: grayscale(100%);
+        @include df-transition;
+    }
 }
+
+// Item hover
+.clients__item:hover {
+    .clients__logo {
+        filter: grayscale(0%);
+    }
+}
+// End item hover
