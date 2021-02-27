@@ -14,4 +14,20 @@ new fullpage('#fullpage', {
     }
 })
 
-// Scroll height
+// Language
+const langBtn = document.getElementById('lngBtn'),
+    langList = document.getElementById('lngList')
+
+langBtn.addEventListener('click', e => {
+    e.stopPropagation()
+    openLangList()
+})
+
+const openLangList = () => {
+    langList.classList.toggle('list--visible')
+}
+// End lnaguage
+
+document.addEventListener('click', () => {
+    langList.classList.remove('list--visible')
+})
