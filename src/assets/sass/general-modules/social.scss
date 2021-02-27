@@ -1,0 +1,22 @@
+.social {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+    &__icon {
+        width: 26px;
+        height: auto;
+
+        path {
+            @include df-transition;
+        }
+    }
+}
+
+.social__link:hover {
+    .social__icon {
+        path {
+            fill: $white;
+        }
+    }
+}
