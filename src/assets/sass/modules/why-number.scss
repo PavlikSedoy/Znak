@@ -1,9 +1,19 @@
 $whyNumber-color: $accent;
 
 .why-number {
+    position: relative;
     color: $whyNumber-color;
+    padding: 25px 0;
+
+    &__whatter-word {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+    }
 
     &__inner {
+        position: relative;
         display: flex;
         flex-direction: column;
     }
