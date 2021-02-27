@@ -31,12 +31,12 @@ section.acquaintance.section.section--dark
                 - var tabs = ['ОФИСЫ', 'Дома', 'КВАРТИРЫ', 'КОТЕДЖИ']
                 
                 .acquaintance__tab-wr
-                        button.acquaintance__tab-item.tab.tab--active.tab--acquaintance(data-tab='0')
+                        button.acquaintance__tab-item.tab.tab--active.tab--acquaintance.hoverable(data-tab='0')
                             span.tab__line
                             span.tab__name РЕСТОРАНЫ
                 each tab, index in tabs
                     .acquaintance__tab-wr
-                        button.acquaintance__tab-item.tab.tab--acquaintance(data-tab=`${index + 1}`)
+                        button.acquaintance__tab-item.tab.tab--acquaintance.hoverable(data-tab=`${index + 1}`)
                             span.tab__line
                             span.tab__name= tab
                     //- End item

@@ -21,6 +21,14 @@ html(lang="ru-RU")
 	body
 		include ../general-sections/header
 		+scroll-status
+		.cursor
+			.cursor__ball.cursor__ball--big
+				<svg height="30" width="30"><circle cx="15" cy="15" r="12" stroke-width="0"></circle></svg>
+			//- .cursor__ball.cursor__ball--small
+			//- 	<svg height="10" width="10">
+			//- 		<circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+			//- 	</svg>
 		main#fullpage
 			block content
 		block script
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
