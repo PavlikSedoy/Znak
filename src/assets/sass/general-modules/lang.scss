@@ -1,3 +1,7 @@
+$langList--bg: $white;
+$langList--color: $black;
+$langList--color--hover: $accent;
+
 .lang {
     position: relative;
     color: $white;
@@ -14,10 +18,39 @@
     }
 
     ul {
+        top: calc(100% + 10px);
+        left: 50%;
+        transform: translateX(-50%);
         opacity: 0;
         visibility: hidden;
         position: absolute;
-        right: 100%;
-        left: 0;
+        background: $langList--bg;
+        display: block;
+        text-align: center;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        height: 0;
+
+        a {
+            display: block;
+            padding: 5px 10px;
+            color: $langList--color;
+            @include df-transition;
+        }
     }
+}
+
+.lang__current:hover {
+    cursor: pointer;
+}
+
+.lang ul a:hover {
+    color: $langList--color--hover;
+}
+
+.lang ul.list--visible {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
 }
