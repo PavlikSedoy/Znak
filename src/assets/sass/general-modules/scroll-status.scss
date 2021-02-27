@@ -1,5 +1,6 @@
 // Colors
 $scrollStatus-color: $white;
+$scrollStatus-color--dark: $gray;
 $scrollStatus-accentColor: $accent;
 
 // Sizes
@@ -21,6 +22,7 @@ $scrollStatus-margin--xl: 20px;
     flex-direction: column;
     align-items: center;
     z-index: z('up-content');
+    @include df-transition;
 
     &__number {
         font-weight: 600;
@@ -32,6 +34,7 @@ $scrollStatus-margin--xl: 20px;
         width: $scrollStatus-width--xl;
         height: $scrollStatus-height--xl;
         background: $scrollStatus-color;
+        @include df-transition;
     }
 
     &__vizual {
@@ -40,5 +43,15 @@ $scrollStatus-margin--xl: 20px;
         width: 100%;
         background: $scrollStatus-accentColor;
         @include df-transition;
+    }
+}
+
+.scroll-status--dark {
+    color: $scrollStatus-color--dark;
+
+    .scroll-status {
+        &__line {
+            background: $scrollStatus-color--dark;
+        }
     }
 }
