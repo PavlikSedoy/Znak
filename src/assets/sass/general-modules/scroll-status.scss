@@ -42,21 +42,3 @@ $scrollStatus-margin--xl: 20px;
         @include df-transition;
     }
 }
-
-// Modificators
-.scroll-status__line {
-    &--top {
-        &::before {
-            top: 0;
-        }
-    }
-    // End top
-
-    &--middle {
-        &::before {
-            top: 50%;
-            transform: translateY(-50%);
-        }
-    }
-    // End middle
-}

@@ -18,7 +18,7 @@
 
         .section-bg {
             &__gradient {
-                right: 0;
+                right: -2px;
                 background: linear-gradient(90deg, rgba(17, 17, 17, 0) 0%, #111111 100%);
             }
         }
@@ -30,7 +30,7 @@
 
         .section-bg {
             &__gradient {
-                left: 0;
+                left: -2px;
                 background: linear-gradient(-90deg, rgba(17, 17, 17, 0) 0%, #111111 100%);
             }
         }

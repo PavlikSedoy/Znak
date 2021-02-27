@@ -10,9 +10,9 @@ mixin iconClass(name, iconClassName)
 	svg(class= iconClassName)
 		use(xlink:href="/svg/sprite.svg#" + name)
 
-mixin scroll-status(firstNumber, lastNumber, position)
-	.scroll-status
-		span#currentScroll.scroll-status__number.scroll-status__number--start= firstNumber
-		div(class="span scroll-status__line scroll-status__line--" + position)
+mixin scroll-status()
+	.scroll-status#scrollStatus
+		span#currentScroll.scroll-status__number.scroll-status__number--start= 0
+		div(class="span scroll-status__line")
 			div#scrollVizual.scroll-status__vizual
-		span#totalScrolls.scroll-status__number.scroll-status__number--end= lastNumber
+		span#totalScrolls.scroll-status__number.scroll-status__number--end= 0
