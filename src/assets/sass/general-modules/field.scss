@@ -29,9 +29,14 @@ $field-materialToRight-borderWidth: 2px;
         height: 100%;
         padding: 0;
         border-bottom: $field-materialToRight-borderWidth solid $field-materialToRight-color;  
+        @include df-transition;
         
         @include placeholder {
             color: $field-materialToRight-color--placeholder;
+        }
+
+        &--error {
+          border-color: $accent;
         }
     }
 
