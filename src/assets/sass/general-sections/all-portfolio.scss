@@ -6,7 +6,20 @@
     }
 
     &__items-wr-container {
-        margin-top: 80px;
+        position: relative;
+        margin: 80px auto 0 auto;
+        width: 100%;
+        max-width: 1070px;
+
+        &::after {
+            @include pseudo;
+            left: calc( 100% + ( (100vw - 1070px) / 2 - 368px));
+            top: 0;
+            height: 100%;
+            width: 368px;
+            background: linear-gradient(90deg, rgba(17, 17, 17, 0) 0%, #111111 100%);
+            z-index: z('content');
+        }
     }
 
     &__items-wr {

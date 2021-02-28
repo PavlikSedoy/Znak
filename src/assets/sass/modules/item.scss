@@ -28,10 +28,71 @@
         line-height: 27px;
         color: $lightGray;
     }
+
+    // Whatter line
+    &__whatter-word {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        &::before, &::after {
+            @include pseudo;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            opacity: 0;
+            @include df-transition;
+        }
+
+        &::before {
+            top: 0px;
+            background: $accent;
+        }
+
+        &::after {
+            bottom: 0px;
+            background: $white;
+        }
+    }
+
+    &__whatter-word-diagonal {
+        position: absolute;
+        width: 60%;
+        height: 3px;
+        opacity: 0;
+        @include df-transition;
+
+        &--first {
+            left: 0;
+            bottom: 0;
+            background: $white;
+            transform: rotate(-30.5deg) translate(14px, -78px);
+        }
+
+        &--second {
+            right: 0;
+            top: 0;
+            background: $accent;
+            transform: rotate(-30.5deg) translate(-14px, 78px);
+        }
+    }
+    // End whatter line
 }
 
 .item:hover {
     .item__title {
         color: $accent;
+    }
+
+    .item__whatter-word {
+        &::before, &::after {
+            opacity: 1;
+        }
+    }
+
+    .item__whatter-word-diagonal {
+        opacity: 1;
     }
 }
