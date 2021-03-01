@@ -54,10 +54,42 @@
         }
     }
 
+    
     &__social {
         position: absolute;
         left: 15px;
         bottom: 40px;
         z-index: z('content');
+    }
+    
+    &__btns {
+        margin-top: 70px;
+        display: flex;
+        gap: 20px;
+    }
+    
+    &__content--md {
+        p {
+            font-size: 18px;
+            line-height: 27px;
+            max-width: 770px;
+        }
+    }
+
+    &__container--right {
+        align-items: flex-end;
+        padding-left: 0;
+        padding-right: 80px;
+    }
+
+    &__bg--left {
+        right: auto;
+        left: 0;
+
+        &::before {
+            left: auto;
+            right: -2px;
+            background: linear-gradient(90deg, rgba(17, 17, 17, 0) 0%, #111111 100%);
+        }
     }
 }
