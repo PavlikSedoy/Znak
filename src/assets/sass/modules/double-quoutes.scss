@@ -1,0 +1,37 @@
+.double-quotes {
+    &__quote {
+        position: absolute;
+        width: 49px;
+        height: 41px;
+
+        &--open {
+            top: 100px;
+            left: 100px;
+        }
+
+        &--close {
+            bottom: 100px;
+            right: 100px;
+        }
+    }
+
+    &__brand {
+        position: relative;
+        margin-top: 45px;
+        text-align: center;
+    }
+
+    &__brand-line {
+        @include push--center-middle;
+        width: 73px;
+        height: 73px;
+    }
+
+    &__brand-name {
+        position: relative;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: $black;
+    }
+}

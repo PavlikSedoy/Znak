@@ -101,6 +101,11 @@ const plugins = () => {
       filename: 'news.html',
       chunks: ['news'],
     }),
+    new HtmlWebpackPlugin({
+      template: './pug/single-news.pug',
+      filename: 'single-news.html',
+      chunks: ['singleNews'],
+    }),
     // new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
       {
@@ -143,6 +148,7 @@ module.exports = {
     portfolio: './assets/js/portfolio.js',
     team: './assets/js/team.js',
     news: './assets/js/news.js',
+    singleNews: './assets/js/single-news.js',
   },
   output: {
     filename: './js/custom/' + filename('js'),
