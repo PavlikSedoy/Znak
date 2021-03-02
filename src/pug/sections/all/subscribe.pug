@@ -1,0 +1,14 @@
+.subscribe.section.section--white.fp-auto-height
+    .container.subscribe__container
+        h4.subscribe__title Подписаться на новости
+        //- End title
+        form.subscribe__form#subscribeForm(action="/", method="post")
+            label.subscribe__field.field.field--material-to-right.field--dark
+                input#subscribeEmail.field__input(placeholder="mail@gamil.com" require)
+                span.field__label-wrap
+                    span.field__label Email
+            button#subscribeSend.subscribe__btn.btn-df.btn-df--border.btn-df--dark(type="submit")
+                span.btn-df__bg
+                span.btn-df__name ПОДПИСАТЬСЯ
+        //- End form
+    //- End container
