@@ -51,7 +51,7 @@ $z-indexes: (
   "up-content",
   "content",
   "cursour",
-  "below-contnet"
+  "below-content"
 );
 
 @mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false ) {

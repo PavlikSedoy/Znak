@@ -1,6 +1,7 @@
 import '@styles/team.scss'
 
 import '@js/utils/general'
+import '@js/components/portfolio'
 
 import fullpage from "fullpage.js/dist/fullpage"
 import "fullpage.js/vendors/scrolloverflow"

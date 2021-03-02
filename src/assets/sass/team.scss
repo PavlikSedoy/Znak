@@ -1,6 +1,13 @@
 @import "utils/main";
 
+// Libs
+@import "../../../node_modules/swiper/swiper-bundle.css";
+
 // Modules
+@import "modules/tab.scss";
+@import "modules/item.scss";
 
 // Sections
 @import "sections/home-screen.scss";
+@import "sections/team-content.scss";
+@import "general-sections/all-portfolio.scss";
