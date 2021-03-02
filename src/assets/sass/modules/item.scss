@@ -77,9 +77,61 @@
             background: $accent;
             transform: rotate(-30.5deg) translate(-14px, 78px);
         }
+
+        &--first {
+        }
+
+        &--second {
+        }
     }
     // End whatter line
 }
+
+// Modificators
+.item--news {
+    .item {
+        &__image-wrapper {
+            padding-top: 70%;
+        }
+
+        &__whatter-word-diagonal {
+            &--first, &--second {
+                width: 70%;
+            }
+
+            &--first {
+                transform: rotate(-34.7deg) translate(14px, -101px);
+            }
+
+            &--second {
+                transform: rotate(-34.7deg) translate(-14px, 101px);
+            }
+        }
+
+        &__content {
+            padding-right: 20px;
+        }
+
+        &__title {
+            margin-top: 30px;
+            text-transform: unset;
+        }
+
+        &__cat {
+            margin-top: 30px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: $white;
+            display: inline-block;
+        }
+
+        &__desc {
+            margin-top: 30px;
+        }
+    }
+}
+// End modificators
 
 .item:hover {
     .item__title {
@@ -94,5 +146,6 @@
 
     .item__whatter-word-diagonal {
         opacity: 1;
+        // width: 70%;
     }
 }
