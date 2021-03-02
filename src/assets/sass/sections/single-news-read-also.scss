@@ -1,0 +1,13 @@
+.read-also {
+    &__heading {
+        padding-top: 200px;
+    }
+
+    &__wr {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 107px;
+        padding-bottom: 200px;
+    }
+}
