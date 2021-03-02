@@ -1,0 +1,37 @@
+$imgPagination-color: $lightGray;
+$imgPagination-color--current: $accent;
+
+.img-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__number {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        @include df-transition;
+    }
+
+    &__number--current {
+        color: $imgPagination-color--current;
+    }
+
+    &__number--total {
+        color: $imgPagination-color;
+    }
+
+    &__progress-block {
+        margin: 0 20px;
+        position: relative;
+        height: 2px;
+        width: 140px;
+        background: $imgPagination-color;
+    }
+
+    &__proggress-line {
+        height: 100%;
+        background: $imgPagination-color--current;
+        @include df-transition;
+    }
+}
