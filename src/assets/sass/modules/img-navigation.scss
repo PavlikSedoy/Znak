@@ -1,11 +1,11 @@
-$imgPagination-color: $lightGray;
-$imgPagination-color--hover: $accent;
+$imgnavigation-color: $lightGray;
+$imgnavigation-color--hover: $accent;
 
-.img-pagination {
+.img-navigation {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color: $imgPagination-color;
+    color: $imgnavigation-color;
     @include df-transition;
     position: relative;
     background: transparent;
@@ -17,7 +17,7 @@ $imgPagination-color--hover: $accent;
         @include push--middle;
         height: 2px;
         width: 80px;
-        background: $imgPagination-color;
+        background: $imgnavigation-color;
         @include df-transition;
     }
 
@@ -38,11 +38,11 @@ $imgPagination-color--hover: $accent;
     }
 }
 
-.img-pagination:hover {
-    color: $imgPagination-color--hover;
+.img-navigation:hover {
+    color: $imgnavigation-color--hover;
     cursor: pointer;
 
     &::before {
-        background: $imgPagination-color--hover;
+        background: $imgnavigation-color--hover;
     }
 }
