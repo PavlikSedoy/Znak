@@ -34,5 +34,27 @@ section.section.section--white.mission
             //- End content item
         //- End content side
         .mission__side.mission__side--slider
+            .swiper-container.mission__slider-container#missionSlider
+                .swiper-wrapper.mission__slider-wrapper
+                    .swiper-slide.mission__slider-slide
+                        .mission__slider-img-wr
+                            img.mission__slider-img(src="/assets/pics/about-mission/slide.jpg", alt="alt")
+                    .swiper-slide.mission__slider-slide
+                        .mission__slider-img-wr
+                            img.mission__slider-img(src="/assets/pics/about-mission/slide2.jpg", alt="alt")
+                    .swiper-slide.mission__slider-slide
+                        .mission__slider-img-wr
+                            img.mission__slider-img(src="/assets/pics/about-mission/slide3.jpg", alt="alt")
+                    .swiper-slide.mission__slider-slide
+                        .mission__slider-img-wr
+                            img.mission__slider-img(src="/assets/pics/about-mission/slide4.jpg", alt="alt")
+                //- End slider wrapper
+            //- End slider container
+
+            .mission__slider-controls.img-slider-controls
+                button.img-slider-controls__pagination.img-pagination.img-pagination--prev#missionSliderPrev Предыдущий
+                .img-slider-controls__navigation.img-navigation#missionSliderNavigation Nav
+                button.img-slider-controls__pagination.img-pagination.img-pagination--next#missionSliderPrev Следующая
+            //- End slider controls
         //- End slider side
     //- End container

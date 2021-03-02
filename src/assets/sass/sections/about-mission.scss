@@ -81,4 +81,28 @@
         }
     }
     // End content items
+
+    // Slider
+    &__slider-slide {
+        padding-top: 67%;
+    }
+
+    &__slider-img-wr {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__slider-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__slider-controls {
+        margin-top: 20px;
+    }
+    // End slider
 }
