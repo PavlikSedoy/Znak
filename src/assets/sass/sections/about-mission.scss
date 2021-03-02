@@ -1,0 +1,84 @@
+.mission {
+    // General
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+
+    &__side {
+        &--content {
+            width: calc(100% - 960px);
+            display: grid;
+            grid-template-columns: 350px 300px;
+            grid-gap: 75px 60px;
+        }
+
+        &--slider {
+            width: 960px;
+        }
+    }
+    // End general
+
+    // Heding
+    &__heading-desc-btn {
+        padding-right: 60px;
+    }
+
+    &__heading-desc {
+        margin-top: 20px;
+    }
+
+    &__heading-btn {
+        margin-top: 30px;
+        display: block;
+        text-align: center;
+    }
+    // End heading
+
+    // Content items
+    &__content-item {
+        position: relative;
+        padding: 24px 20px 24px 30px;
+    }
+
+    &__content-item--z {
+        align-self: flex-end;
+    }
+
+    &__item-title {
+        color: $black;
+    }
+
+    &__item-content {
+        margin-top: 20px;
+    }
+
+    &__whatter-word {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__whatter-word-icon {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__content-item--z {
+        padding: 0;
+
+        .mission__item-title {
+            color: $accent;
+        }
+
+        .mission__content-item-inner {
+            position: relative;
+            padding: 24px 20px 24px 30px;
+        }
+    }
+    // End content items
+}
