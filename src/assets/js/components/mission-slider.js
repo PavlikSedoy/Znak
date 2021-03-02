@@ -6,7 +6,7 @@ const missionSlider = new Swiper('#missionSlider', {
     loop: true,
     navigation: {
         prevEl: '#missionSliderPrev',
-        nextEl: '#missionSliderPrev',
+        nextEl: '#missionSliderNext',
     },
     pagination: {
         el: '#missionSliderNavigation',
