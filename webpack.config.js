@@ -86,6 +86,11 @@ const plugins = () => {
       filename: 'about.html',
       chunks: ['about'],
     }),
+    new HtmlWebpackPlugin({
+      template: './pug/portfolio.pug',
+      filename: 'portfolio.html',
+      chunks: ['portfolio'],
+    }),
     // new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
       {
@@ -125,6 +130,7 @@ module.exports = {
   entry: {
     index: './assets/js/index.js',
     about: './assets/js/about.js',
+    portfolio: './assets/js/portfolio.js',
   },
   output: {
     filename: './js/custom/' + filename('js'),
