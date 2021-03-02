@@ -82,6 +82,14 @@
         padding-right: 80px;
     }
 
+    &__content--right {
+        text-align: right;
+
+        p {
+            margin-left: auto;
+        }
+    }
+
     &__bg--left {
         right: auto;
         left: 0;
